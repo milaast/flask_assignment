@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>  
+  <title>App Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="static/application-form.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Application Form</h1>
+
+    <h4>
+      Please, fill out this form with your personal information and tell us about your professional aspiration. 
+    </h4>
+
+    <form action='/application-success' method='POST'>
+    <div class="row">
+    <div class="col-xs-6">First Name <input type='text' name='firstname'></div></div><br>
+    <div class="row"><div class="col-xs-6">Last Name <input type='text' name='lastname' id='lastname'></div></div><br>
+    <div class="row"><div class="col-xs-6">Salary Requirement <input type='number' name='salary'></div></div><br>
+    <div class="row"><div class="col-xs-6">Desired Position 
+      <select name='desired_position'>
+        <option value='engineer'>Software Engineer</option>
+        <option value='qa_eng'>QA Engineer</option>
+        <option value='prod_manager'>Product Manager</option>
+      </select></div></div><br>
+    <div class="row"><div class="col-xs-6"><input type='submit' value='Submit!'></div></div><br>
+    </form>
+
+  </div><!-- closing container div -->
+</body>
+</html>

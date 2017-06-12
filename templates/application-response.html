@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <title>SUCCESS!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="">
+
+</head>
+<body>
+
+    <h1>Thank you!</h1>
+
+    <h4>
+      Thank you, {{ first_name }} {{ last_name }}, for applying to be a {{ title }}. 
+      Your minimun salary requirement is {{ "${:,.2f}".format(salary) }}.
+    </h4>
+
+</body>
+</html>
